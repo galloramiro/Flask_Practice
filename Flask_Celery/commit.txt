@@ -1,0 +1,16 @@
+(  ) [dataloader] Create 'dataloader' app dir
+        * Create __init__.py
+        * Create settings.py
+        * Configure PostgreSQL
+        * Create run.py
+(  ) [core] Create 'core' subdir
+        * Create __init__.py
+        * Create routes.py
+        * Create 'templates' subdir
+
+(  ) - 
+(  ) - 
+(  ) - 
+(  ) - 
+(  ) - 
+(  ) - 
