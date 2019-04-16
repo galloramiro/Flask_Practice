@@ -1,16 +1,26 @@
-(  ) [dataloader] Create 'dataloader' app dir
+(ok) [dataloader] Create 'dataloader' app dir
         * Create __init__.py
         * Create settings.py
         * Configure PostgreSQL
         * Create run.py
-(  ) [core] Create 'core' subdir
+(ok) [core] Create 'core' subdir
         * Create __init__.py
         * Create routes.py
         * Create 'templates' subdir
-
-(  ) - 
-(  ) - 
-(  ) - 
-(  ) - 
-(  ) - 
-(  ) - 
+(ok) [core] Make the routes & templates work.
+(ok) [dataloader] Create models.py
+        * Genes str
+        * Test str
+        * TMP float
+        * Update date
+(ok) [dataloader] Configure Alembic
+        * Install Alembic
+        * Configurealembic.ini
+        * Configure the first migration to create the table
+        * Install psycopg2
+(ok) [core] Create forms.py
+(ok) [core] Create utils.py
+(  ) [core] Edit the home.html
+(  ) [core] Edit the routes.py logic
+(  ) [core] 
+(  ) [core] 

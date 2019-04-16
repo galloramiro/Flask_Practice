@@ -12,4 +12,7 @@ def create_app(config_class=Settings):
     db.init_app(app)
     bcrypt.init_app(app)
 
+    from dataloader.core.routes import core
+    app.register_blueprint(core)
+
     return app
