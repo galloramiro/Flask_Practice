@@ -1,18 +1,10 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from flask_bcrypt import Bcrypt
-from dataloader.settings import Settings
+from dataloader.settings import Setting
 
-db = SQLAlchemy()
-bcrypt = Bcrypt()
+app = Flask(__name__)
+app.config.from_object(Setting)
+db = SQLAlchemy(app)
 
-def create_app(config_class=Settings):
-    app = Flask(__name__)
-    app.config.from_object(Settings)
-    db.init_app(app)
-    bcrypt.init_app(app)
-
-    from dataloader.core.routes import core
-    app.register_blueprint(core)
-
-    return app
+from dataloader.core.routes import core
+app.register_blueprint(core)

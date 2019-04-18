@@ -3,24 +3,27 @@
         * Create settings.py
         * Configure PostgreSQL
         * Create run.py
+        * Create static folder
 (ok) [core] Create 'core' subdir
         * Create __init__.py
         * Create routes.py
         * Create 'templates' subdir
-(ok) [core] Make the routes & templates work.
+        * Register the blue print in dataloader.__init__.py
+        * Create forms.py
+        * Add the form to routes.py and configure the template
 (ok) [dataloader] Create models.py
+        * id pk
         * Genes str
         * Test str
         * TMP float
         * Update date
-(ok) [dataloader] Configure Alembic
+        * Create the table
+(  ) [dataloader] Configure Alembic
         * Install Alembic
         * Configurealembic.ini
-        * Configure the first migration to create the table
-        * Install psycopg2
-(ok) [core] Create forms.py
+        * Configure de env.py (I'cant)
 (ok) [core] Create utils.py
-(  ) [core] Edit the home.html
-(  ) [core] Edit the routes.py logic
-(  ) [core] 
-(  ) [core] 
+        * Create the logic to decode de info and save it to the db
+        * Edit the routes.py logic
+        * Test it 
+(  ) [core] Install Celery to start play with asynchronous task

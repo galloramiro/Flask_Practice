@@ -12,6 +12,7 @@ config = context.config
 
 # Interpret the config file for Python logging.
 # This line sets up loggers basically.
+from flask import current_app
 fileConfig(config.config_file_name)
 
 # add your model's MetaData object here

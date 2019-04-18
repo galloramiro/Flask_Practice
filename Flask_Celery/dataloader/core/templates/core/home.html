@@ -1,4 +1,23 @@
 {% extends 'layout.html' %}
 {% block content %}
-    <h1>About</h1>
+<div class="content-section">
+        <div class="media">
+            <div class="media-body">
+                <h2 class="account-heading">Welcome to the Data Loader</h2>
+                <p class="text-secondary">Please select the file to upload</p>
+            </div>
+        </div>
+        <form method="POST" action="" enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+                <div class="form-group">
+                    {{ form.gen_data.label() }}
+                    {{ form.gen_data(class="form-control-file") }}
+                </div>
+            </fieldset>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info") }}
+            </div>
+        </form>
+    </div>
 {% endblock %}
